@@ -13,8 +13,10 @@ typedef signed int SM_Int32;
 typedef unsigned long SM_UInt64;
 typedef signed long SM_Int64;
 
-typedef unsigned char SM_Bool;
+typedef float SM_Float;
+typedef double SM_Double;
 
+typedef unsigned char SM_Bool;
 #define SM_FALSE ((SM_Bool)0)
 #define SM_TRUE  ((SM_Bool)1)
 
