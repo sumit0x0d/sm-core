@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22.1)
 
 project(sm-core
     VERSION 1.0.0
-    DESCRIPTION "SM Core"
+    DESCRIPTION "Core (libsm-x)"
     LANGUAGES C
 )
 
@@ -15,10 +15,9 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 if(MSVC)
      add_compile_options(/W4 /WX)
 else()
-     # set(CMAKE_C_VISIBILITY_PRESET hidden)
-     # set(CMAKE_CXX_VISIBILITY_PRESET hidden)
-     # set(CMAKE_VISIBILITY_INLINES_HIDDEN YES)
-     # set(CMAKE_SHARED_LIBRARY_PREFIX "")
+     set(CMAKE_C_VISIBILITY_PRESET hidden)
+     set(CMAKE_CXX_VISIBILITY_PRESET hidden)
+     set(CMAKE_VISIBILITY_INLINES_HIDDEN YES)
      add_compile_options(-Wall -Wextra -Werror -pedantic)
 endif()
 
