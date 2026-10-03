@@ -3,25 +3,25 @@
 
 #include <stddef.h>
 
-typedef unsigned char SM_UInt8;
-typedef signed char SM_Int8;
+typedef unsigned char SM_Unsigned_Int_8;
+typedef signed char SM_Signed_Int_8;
 
-typedef unsigned short SM_UInt16;
-typedef signed short SM_Int16;
+typedef unsigned short SM_Unsigned_Int_16;
+typedef signed short SM_Signed_Int_16;
 
-typedef unsigned int SM_UInt32;
-typedef signed int SM_Int32;
+typedef unsigned int SM_Unsigned_Int_32;
+typedef signed int SM_Signed_Int_32;
 
-typedef unsigned long SM_UInt64;
-typedef signed long SM_Int64;
+typedef unsigned long SM_Unsigned_Int_64;
+typedef signed long SM_Signed_Int_64;
 
 typedef float SM_Float;
 typedef double SM_Double;
 
 typedef enum {
-     SM_BOOL_FALSE = 0,
-     SM_BOOL_TRUE = 1
-} SM_Bool;
+     SM_BOOLEAN_FALSE = 0,
+     SM_BOOLEAN_TRUE = 1
+} SM_Boolean;
 
 typedef enum {
      SM_COMPARE_LESS = -1,
