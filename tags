@@ -297,14 +297,14 @@ SM_Callback_Unary	include/sm-callback.h	/^} SM_Callback_Unary;$/;"	t	typeref:str
 SM_Compare	include/sm-typedef.h	/^} SM_Compare;$/;"	t	typeref:enum:__anon44b3628c0203
 SM_Double	include/sm-typedef.h	/^typedef double SM_Double;$/;"	t	typeref:typename:double
 SM_Float	include/sm-typedef.h	/^typedef float SM_Float;$/;"	t	typeref:typename:float
-SM_Int_16	include/sm-typedef.h	/^typedef signed short SM_Int_16;$/;"	t	typeref:typename:signed short
-SM_Int_32	include/sm-typedef.h	/^typedef signed int SM_Int_32;$/;"	t	typeref:typename:signed int
-SM_Int_64	include/sm-typedef.h	/^typedef signed long SM_Int_64;$/;"	t	typeref:typename:signed long
-SM_Int_8	include/sm-typedef.h	/^typedef signed char SM_Int_8;$/;"	t	typeref:typename:signed char
 SM_STRING_CHAR_STACK_BOOL_FALSE	source/sm-string-char-stack.h	/^     SM_STRING_CHAR_STACK_BOOL_FALSE = 0,$/;"	e	enum:__anon85b38cad0103
 SM_STRING_CHAR_STACK_BOOL_TRUE	source/sm-string-char-stack.h	/^     SM_STRING_CHAR_STACK_BOOL_TRUE = 1$/;"	e	enum:__anon85b38cad0103
 SM_STRING_CHAR_STACK_H	source/sm-string-char-stack.h	/^#define SM_STRING_CHAR_STACK_H$/;"	d
 SM_STRING_H	include/sm-string.h	/^#define SM_STRING_H$/;"	d
+SM_Signed_16	include/sm-typedef.h	/^typedef signed short SM_Signed_16;$/;"	t	typeref:typename:signed short
+SM_Signed_32	include/sm-typedef.h	/^typedef signed int SM_Signed_32;$/;"	t	typeref:typename:signed int
+SM_Signed_64	include/sm-typedef.h	/^typedef signed long SM_Signed_64;$/;"	t	typeref:typename:signed long
+SM_Signed_8	include/sm-typedef.h	/^typedef signed char SM_Signed_8;$/;"	t	typeref:typename:signed char
 SM_String	include/sm-string.h	/^typedef struct SM_String SM_String;$/;"	t	typeref:struct:SM_String
 SM_String	source/sm-string.c	/^struct SM_String {$/;"	s	file:
 SM_StringCharStack	source/sm-string-char-stack.h	/^struct SM_StringCharStack {$/;"	s
@@ -317,13 +317,13 @@ SM_StringCharStack_IsEmpty	source/sm-string-char-stack.c	/^SM_StringCharStackBoo
 SM_StringCharStack_IsFull	source/sm-string-char-stack.c	/^SM_StringCharStackBool SM_StringCharStack_IsFull(SM_StringCharStack *this)$/;"	f	typeref:typename:SM_StringCharStackBool
 SM_StringCharStack_Pop	source/sm-string-char-stack.c	/^void SM_StringCharStack_Pop(SM_StringCharStack *this)$/;"	f	typeref:typename:void
 SM_StringCharStack_Push	source/sm-string-char-stack.c	/^void SM_StringCharStack_Push(SM_StringCharStack *this, char data)$/;"	f	typeref:typename:void
-SM_String_Create	source/sm-string.c	/^SM_String *SM_String_Create(const char *data)$/;"	f	typeref:typename:SM_String *
+SM_String_Create	source/sm-string.c	/^SM_String *SM_String_Create(const SM_Unsigned_8 *data)$/;"	f	typeref:typename:SM_String *
 SM_String_Destroy	source/sm-string.c	/^void SM_String_Destroy(SM_String *this)$/;"	f	typeref:typename:void
 SM_TYPEDEF_H	include/sm-typedef.h	/^#define SM_TYPEDEF_H$/;"	d
-SM_UInt_16	include/sm-typedef.h	/^typedef unsigned short SM_UInt_16;$/;"	t	typeref:typename:unsigned short
-SM_UInt_32	include/sm-typedef.h	/^typedef unsigned int SM_UInt_32;$/;"	t	typeref:typename:unsigned int
-SM_UInt_64	include/sm-typedef.h	/^typedef unsigned long SM_UInt_64;$/;"	t	typeref:typename:unsigned long
-SM_UInt_8	include/sm-typedef.h	/^typedef unsigned char SM_UInt_8;$/;"	t	typeref:typename:unsigned char
+SM_Unsigned_16	include/sm-typedef.h	/^typedef unsigned short SM_Unsigned_16;$/;"	t	typeref:typename:unsigned short
+SM_Unsigned_32	include/sm-typedef.h	/^typedef unsigned int SM_Unsigned_32;$/;"	t	typeref:typename:unsigned int
+SM_Unsigned_64	include/sm-typedef.h	/^typedef unsigned long SM_Unsigned_64;$/;"	t	typeref:typename:unsigned long
+SM_Unsigned_8	include/sm-typedef.h	/^typedef unsigned char SM_Unsigned_8;$/;"	t	typeref:typename:unsigned char
 STRINGIFY	build/CMakeFiles/3.31.6/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
 STRINGIFY	build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
 STRINGIFY_HELPER	build/CMakeFiles/3.31.6/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
@@ -346,7 +346,7 @@ cmake_check_build_system	build/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_force	build/Makefile	/^cmake_force:$/;"	t
 command	build/compile_commands.json	/^  "command": "\/usr\/bin\/cc -Dsm_string_EXPORTS -I\/home\/sumit\/Projects\/sm-core\/include -O3/;"	s	object:0
 const	build/CMakeFiles/3.31.6/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
-data	source/sm-string.c	/^     unsigned char *data;$/;"	m	struct:SM_String	typeref:typename:unsigned char *	file:
+data	source/sm-string.c	/^     SM_Unsigned_8 *data;$/;"	m	struct:SM_String	typeref:typename:SM_Unsigned_8 *	file:
 default_target	build/Makefile	/^default_target: all$/;"	t
 depend	build/Makefile	/^depend:$/;"	t
 directory	build/compile_commands.json	/^  "directory": "\/home\/sumit\/Projects\/sm-core\/build",$/;"	s	object:0
