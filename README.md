@@ -1,1 +1,1 @@
-# Core (libsm-x)
+# [libsm-x] Core

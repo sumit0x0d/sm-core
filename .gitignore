@@ -1,4 +1,8 @@
-.cache
-.vscode
-build
-TAGS
+/*
+!include/
+!source/
+!test/
+!.gitignore
+!CMakeLists.txt
+!LICENSE
+!README.md
